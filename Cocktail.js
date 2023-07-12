@@ -3,11 +3,11 @@ let alcoholInput = document.querySelector("[name=cocktail-name]");
 let responseContainer = document.querySelector(".js-response-container"); 
 
 
-function displayCocktail(response) {
-    const drinks = response.drinks;
+function displayCocktails(response) {
+    const drink = response.drinks;
 
-    let html = ""
-    for (let drinks of drinks) {
+    let html = '';
+    for (let drinks of drink) {
         html += `<p> ${drinks.strDrink} </p>`; 
      
     }
@@ -21,7 +21,7 @@ function queryAlcohol(searchExpression){
 
     fetch(url)
       .then((data) => data.json())
-      .then(displayCocktail);
+      .then(displayCocktails);
 
 }
 
