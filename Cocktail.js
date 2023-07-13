@@ -15,15 +15,17 @@ function displayCocktails(response) {
 
     let html = '';
     for (let drinks of drink) {
-        html += `<section>
-             <h2>${drinks.strDrink}</h2>
+        html += `<section class="drink-item">
+             <h2 class ="name">${drinks.strDrink}</h2>
              ${getImageHtml(drinks)}
-        </section>`; 
-     
+                
+                    <p class="container">INSTRUCTIONS: ${drinks.strInstructions}</p>
+              </section>` 
+        
+        }
+        responseContainer.innerHTML = html;
     }
-     responseContainer.innerHTML = html;
-
-}
+     
 
 function queryAlcohol(searchExpression){
     const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + searchExpression;
@@ -32,6 +34,7 @@ function queryAlcohol(searchExpression){
     fetch(url)
       .then((data) => data.json())
       .then(displayCocktails);
+    
 
 }
 

@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
-    <h1> Margarita Cocktail Search</h1>
+    <h1> Cocktail Drink Search</h1>
     <form action="#" method="GET" class="cocktail-form  js-cocktail-form">
-        <label>
-            Drink name
-            <input type="text" name="cocktail-name" value="" placeholder="Name of cocktail"/>
-        </Label>
-        <button type="submit">Search</button>
+        <div class = "search-container">
+              <div>           
+                 <input class = "search" type="text" name="cocktail-name" value="" placeholder="Type a Cocktail Name"/>
+        
+                 <button class = "search-button" type="submit">Search</button>
+              </div>
+        </div>
     </form>
-    <section class="js-response-container"></section>
+    <section class="js-response-container response-container"></section>
     <script src="./Cocktail.js"></script>
+    
 </body>
 </html>
