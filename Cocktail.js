@@ -20,7 +20,10 @@ function displayCocktails(response) {
              ${getImageHtml(drinks)}
                 
                     <p class="container">INSTRUCTIONS: ${drinks.strInstructions}</p>
-              </section>` 
+                    <a href="${drinks.strSource}"class = "link-button">Ingredients</a>
+              
+                    </section>` 
+              
         
         }
         responseContainer.innerHTML = html;
