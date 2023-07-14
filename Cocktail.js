@@ -41,9 +41,9 @@ function displayCocktails(response) {
              <h2 class ="name">${drinks.strDrink}</h2>
              ${getImageHtml(drinks)}
 
-                    <a class = "inst">Instructions</a>
+                    <a class = "instructions">Instructions</a>
                     <p class="container"> ${drinks.strInstructions}</p>
-                    <a ${drinks.strSource}" class = "link-button">Ingredients</a>
+                    <a ${drinks.strSource}" class = "ingredients">Ingredients</a>
                     <p>  ${getIngredientList(drinks)}  </p>
                     
               

@@ -87,29 +87,31 @@ body {
     font-size: 1.5rem;
 }
 
-.inst {
+.instructions {
+    text-align: center;
     padding:.5rem;
     background-color: aqua;
-    margin:1rem;
+    margin:.5rem;
     text-decoration: none;
-    align-self: baseline;
-    border-radius: 10%;
     font-size: 1.5rem;
     color: black;
 }
-.link-button{
+.ingredients{
+    text-align: center;
     padding:.5rem;
-    background-color:whitesmoke;
-    margin:1rem;
+    background-color:aqua;
+    margin:.5rem;
     text-decoration: none;
-    align-self: baseline;
-    border-radius: 10%;
     font-size: 1.5rem;
     color: black;
+    
+
   
 }
 .ingredient-item {
     color:black;
     margin-left: 2rem;
+    font-size: 1.5rem;
+
 }
 
