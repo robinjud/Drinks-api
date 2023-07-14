@@ -86,15 +86,30 @@ body {
     background-color:none;
     font-size: 1.5rem;
 }
-.link-button{
-    padding:.7rem;
+
+.inst {
+    padding:.5rem;
     background-color: aqua;
     margin:1rem;
     text-decoration: none;
     align-self: baseline;
     border-radius: 10%;
-    font-size: 1rem;
-
-    
-    
+    font-size: 1.5rem;
+    color: black;
 }
+.link-button{
+    padding:.5rem;
+    background-color:whitesmoke;
+    margin:1rem;
+    text-decoration: none;
+    align-self: baseline;
+    border-radius: 10%;
+    font-size: 1.5rem;
+    color: black;
+  
+}
+.ingredient-item {
+    color:black;
+    margin-left: 2rem;
+}
+

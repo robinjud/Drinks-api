@@ -9,6 +9,28 @@ function getImageHtml(drink){
    return "";
 }
 
+function getIngredientList(drink){
+     let html = '<ul>';
+
+      for (let i = 1; i <= 20; ++i){
+           let currentIngredient = drink['strIngredient' + i];
+           let currentMeasure = drink['strMeasure' + i];
+
+           if (typeof currentIngredient === 'string'  && currentIngredient.length > 0)  {
+            html += `
+             <li class = "ingredient-item">
+                      ${currentIngredient} (${currentMeasure})
+             
+             </li>
+            `;
+              }
+
+         }
+
+            html += '</ul>';
+             return html;
+     }
+
 
 function displayCocktails(response) {
     const drink = response.drinks;
@@ -18,9 +40,12 @@ function displayCocktails(response) {
         html += `<section class="drink-item">
              <h2 class ="name">${drinks.strDrink}</h2>
              ${getImageHtml(drinks)}
-                
-                    <p class="container">INSTRUCTIONS: ${drinks.strInstructions}</p>
-                    <a href="${drinks.strSource}"class = "link-button">Ingredients</a>
+
+                    <a class = "inst">Instructions</a>
+                    <p class="container"> ${drinks.strInstructions}</p>
+                    <a ${drinks.strSource}" class = "link-button">Ingredients</a>
+                    <p>  ${getIngredientList(drinks)}  </p>
+                    
               
                     </section>` 
               
@@ -37,6 +62,7 @@ function queryAlcohol(searchExpression){
     fetch(url)
       .then((data) => data.json())
       .then(displayCocktails);
+      
     
 
 }
