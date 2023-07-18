@@ -31,6 +31,11 @@ function getIngredientList(drink){
              return html;
      }
 
+function displayErrorMessage() {
+     responseContainer.innerHTML = '<div class = "error"> Error fetching data.</div>';
+
+}
+
 
 function displayCocktails(response) {
     const drink = response.drinks;
