@@ -1,109 +1,124 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 
 html {
-   font-size: 16 px;
+   font-size:16px;
 }
 
 h1{
-    margin-top: 2rem;
+    margin-top:2rem;
     margin-left:2rem;
-    font-size: 3rem;
+    font-size:3rem;
     color:black;
-    
 }
-
 
 body {
     background:lightyellow;
-    color: black;
+    color:black;
 }
 
 .response-container {
     display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
+    justify-content:space-evenly;
+    flex-wrap:wrap;
 }
 
 .drink-item { 
-    padding: .5rem;
-    width: 40%;
-    margin: 3%;
-    border: 4px solid black;
-    display: flex;
-    flex-direction: column;
+    padding:.5rem;
+    width:40%;
+    margin:3%;
+    border:4px solid black;
+    display:flex;
+    flex-direction:column;
 }
 
 .name {
     color:blue;
-    align-self: center;
-    font-size: 40px;
-    margin-bottom: 1rem;
-     
-   
+    align-self:center;
+    font-size:40px;
+    margin-bottom:1rem; 
 }
 
 .search-container{
-    gap: 2rem;
+    gap:2rem;
     margin:1rem;
-    margin-left: 7rem;
-
-
+    margin-left:7rem;
 }
 
 .search {
-    font-size: 1.5em;
-    padding: .6em .3em;
+    font-size:1.5em;
+    padding:.6em .3em;
     border:none;
     outline:none;
     color:black;
     background-color:lightyellow ;
     border-bottom:2px solid black ;
-
 }
 
-
 .container{
-    border-radius: 5%;
-    margin: .5;
-    padding: 1rem;
-    margin-top: .5rem;
+    border-radius:5%;
+    margin:.5;
+    padding:1rem;
+    margin-top:.5rem;
     background-color:none;
-    font-size: 1.5rem;
+    font-size:1.5rem;
 }
 
 .error{
-    color: red;
+    color:red;
 }
 
 .instructions {
-    text-align: center;
+    text-align:center;
     padding:.5rem;
-    background-color: aqua;
+    background-color:aqua;
     margin:.5rem;
-    text-decoration: none;
+    text-decoration:none;
     font-size: 1.5rem;
-    color: black;
+    color:black;
 }
 .ingredients{
-    text-align: center;
+    text-align:center;
     padding:.5rem;
     background-color:aqua;
     margin:.5rem;
     text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
-    
-
-  
+    font-size:1.5rem;
+    color:black;
 }
+
 .ingredient-item {
     color:black;
-    margin-left: 2rem;
-    font-size: 1.5rem;
-
+    margin-left:2rem;
+    font-size:1.5rem;
 }
 
+.my-btn-class-30 { 
+    width: 200px; 
+    font-size: 16px; 
+    font-weight: 600; 
+    color: rgb(255, 255, 255); 
+    cursor: pointer; 
+    margin: 20px; 
+    height: 55px; 
+    text-align: center; 
+    border: none; 
+    background-size: 300% 100%; 
+    border-radius: 50px; 
+    transition: all 0.4s ease-in-out 0s; 
+}
+
+.my-btn-class-30:hover {
+     background-position: 100% 0px; 
+     transition: all 0.4s ease-in-out 0s; 
+}
+.my-btn-class-30:focus {
+    outline: none; 
+}
+.my-btn-class-30 { 
+    background-image: linear-gradient(to right, rgb(37, 170, 225), rgb(64, 228, 149), rgb(48, 221, 138), rgb(43, 182, 115)); 
+    box-shadow: rgba(49, 196, 190, 0.75) 0px 4px 15px 0px; 
+}
+                   
