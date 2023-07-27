@@ -65,7 +65,7 @@ function formSubmitted(event) {
    event.preventDefault();   
   
    queryAlcohol(alcoholInput.value);
-   alcoholInput.value = "";
+   alcoholInput.value = ""; 
 }
 
 form.addEventListener("submit", formSubmitted);

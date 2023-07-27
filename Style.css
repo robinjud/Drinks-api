@@ -17,6 +17,7 @@ h1{
 body {
     background:lightyellow;
     color:black;
+    min-width: 400px;
 }
 
 .response-container {
@@ -122,3 +123,8 @@ body {
     box-shadow: rgba(49, 196, 190, 0.75) 0px 4px 15px 0px; 
 }
                    
+@media screen and (max-with:768px) {
+    .drink-item {
+        width:80%;
+    }
+}
