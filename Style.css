@@ -97,26 +97,26 @@ body {
 }
 
 .my-btn-class-30 { 
-    width: 200px; 
-    font-size: 16px; 
-    font-weight: 600; 
+    width:200px; 
+    font-size:16px; 
+    font-weight:600; 
     color: rgb(255, 255, 255); 
-    cursor: pointer; 
-    margin: 20px; 
-    height: 55px; 
-    text-align: center; 
-    border: none; 
-    background-size: 300% 100%; 
-    border-radius: 50px; 
-    transition: all 0.4s ease-in-out 0s; 
+    cursor:pointer; 
+    margin:20px; 
+    height:55px; 
+    text-align:center; 
+    border:none; 
+    background-size:300% 100%; 
+    border-radius:50px; 
+    transition:all 0.4s ease-in-out 0s; 
 }
 
 .my-btn-class-30:hover {
-     background-position: 100% 0px; 
-     transition: all 0.4s ease-in-out 0s; 
+     background-position:100% 0px; 
+     transition:all 0.4s ease-in-out 0s; 
 }
 .my-btn-class-30:focus {
-    outline: none; 
+    outline:none; 
 }
 .my-btn-class-30 { 
     background-image: linear-gradient(to right, rgb(37, 170, 225), rgb(64, 228, 149), rgb(48, 221, 138), rgb(43, 182, 115)); 
