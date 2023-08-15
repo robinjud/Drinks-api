@@ -32,13 +32,6 @@ function getIngredientList(drink) {
 function displayCocktails(response) {
   const drink = response.drinks;
 
-  var field = document.querySelector('[name="cocktail-name"]');
-  field.addEventListener("keydown", function (event) {
-    if (event.keyCode === 32 && field.value.trim() === "") {
-      event.preventDefault();
-    }
-  });
-
   let html = "";
   for (let drinks of drink) {
     html += `<section class="drink-item">
@@ -75,3 +68,10 @@ function formSubmitted(event) {
 }
 
 form.addEventListener("submit", formSubmitted);
+
+var field = document.querySelector('[name="cocktail-name"]');
+field.addEventListener("keydown", function (event) {
+  if (event.keyCode === 32 && field.value.trim() === "") {
+    event.preventDefault();
+  }
+});
